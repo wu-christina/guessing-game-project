@@ -6,8 +6,9 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
+// Global variables
 let secretNumber;
-let numAttempts = 5; // number of attemps to guess the secretNumber;
+let numAttempts = 5; // number of attempts to guess the secretNumber;
 
 // Checks if number is close to the secretNumber and provides feedback
 function checkGuess (guess) {
@@ -23,7 +24,7 @@ function checkGuess (guess) {
     };
 };
 
-// Ask user to enter a guess and checks if the guess is close to the secretNumber
+// Ask user to enter a guess and check if the guess is close to the secretNumber up to the number of attempts allowed
 function askGuess (numGuess) {
     numAttempts--;
 
